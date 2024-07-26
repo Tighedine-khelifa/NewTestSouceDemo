@@ -7,9 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HeaderPage {
     @FindBy(id=  "shopping_cart_container")
-    private WebElement shoppingCart;
+     WebElement shoppingCart;
     @FindBy(xpath ="//button[text()='REMOVE']")
-    private WebElement removeButton;
+    WebElement removeButton;
     WebDriver driver;
 
     public HeaderPage(WebDriver driver) {

@@ -11,14 +11,14 @@ import java.util.List;
 
 public class ProductPage {
     @FindBy(xpath = "//select[@class='product_sort_container']")
-            private WebElement filterButton;
+             WebElement filterButton;
     @FindBy(xpath = " //option[@value='hilo']")
-            private WebElement hiloFilter;
+         WebElement hiloFilter;
 
     @FindBy(xpath = "//div[@class='inventory_item_price']")
-            private List<WebElement> listPrice;
+             List<WebElement> listPrice;
     @FindBy(xpath = "//button[@class='btn_primary btn_inventory']")
-            private WebElement adButtonShirt;
+          WebElement adButtonShirt;
     WebDriver driver;
     public ProductPage(WebDriver driver){
         this.driver = driver;
