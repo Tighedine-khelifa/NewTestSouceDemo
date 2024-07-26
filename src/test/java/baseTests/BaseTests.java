@@ -45,6 +45,7 @@ public class BaseTests {
      productPage.clickAdArticle();
      productPage.getUrlProdectPage();
      HeaderPage headerPage = new HeaderPage(driver);
+     productPage.isListInorder();
      Assertions.assertTrue(headerPage.isArticleAdedInCart(),"carte vide");
       Assertions.assertTrue(headerPage.removeArticle(),"^pas d'article a supprimer");
       headerPage.getUrlpage();
