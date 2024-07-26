@@ -28,7 +28,7 @@ public class BaseTests {
     @Test
     public void t001_logInUser(){
         LoginPage loginPage = new LoginPage(driver);
-       Assertions.assertTrue(loginPage.getUrlWebPage().contains("/v1/"),"Erreur de page"); ;
+       Assertions.assertTrue(loginPage.getUrlWebPage().contains("/v1/"),"Erreur de page");
         loginPage.fillInformation();
         loginPage.clickLoginButton();
     }
