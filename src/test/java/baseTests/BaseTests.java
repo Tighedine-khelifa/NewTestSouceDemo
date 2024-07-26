@@ -43,6 +43,7 @@ public class BaseTests {
     public void t003_adArticle(){
      ProductPage productPage =  new ProductPage(driver);
      productPage.clickAdArticle();
+     productPage.getUrlProdectPage();
      HeaderPage headerPage = new HeaderPage(driver);
      Assertions.assertTrue(headerPage.isArticleAdedInCart(),"carte vide");
       Assertions.assertTrue(headerPage.removeArticle(),"^pas d'article a supprimer");
