@@ -8,11 +8,11 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
     @FindBy(id = "user-name")
-            private WebElement userName;
+             WebElement userName;
     @FindBy(id= "password")
-            private WebElement passWord;
+             WebElement passWord;
     @FindBy(xpath = "//input[@value='LOGIN']")
-            private WebElement loginButton;
+             WebElement loginButton;
     WebDriver driver;
     public LoginPage(WebDriver driver) {
         this.driver = driver;
